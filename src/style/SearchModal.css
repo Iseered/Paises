@@ -1,0 +1,29 @@
+.modal-container {
+    position: fixed;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    width: 80%; /* Aumenta el ancho para acomodar tres columnas */
+    max-width: 800px; /* Máximo ancho para pantallas más grandes */
+   
+    
+
+    bottom: 20px;
+    
+
+}
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+  

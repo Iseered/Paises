@@ -1,0 +1,33 @@
+.modal-container {
+  position: fixed;
+  top: 30%; /* Aumenta este valor para bajar el modal */
+  left: 50%;
+  transform: translate(-50%, -30%); /* Ajusta este valor también */
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); /* Cambia la opacidad para hacer que el fondo no se opaque */
+  z-index: 999 !important;
+}
+.modal-container.move-down {
+  position: fixed !important;
+  top: auto !important;
+  bottom: 20px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  margin-top: 0 !important;
+  z-index: 1000 !important;
+}
+.search-bar {
+  position: relative;
+  z-index: 1001; /* Asegura que el input esté sobre el modal */
+}

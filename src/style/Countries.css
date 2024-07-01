@@ -1,0 +1,71 @@
+.country-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.country-card {
+  flex: 1 0 30%; /* Adjusts the card to take roughly 30% of the row */
+  max-width: 30%; /* Ensures the card doesn't grow beyond 30% of the container */
+  margin: 10px; /* Optional: adds some margin between cards */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  text-align: center;
+}
+
+.image-wrapper {
+  height: 120px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.country-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.country-info {
+  padding: 10px;
+}
+
+.flag {
+  width: 40px;
+  height: 24px;
+  margin-bottom: 8px;
+}
+
+.text-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.country-name {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.continent {
+  font-size: 14px;
+  color: gray;
+}
+@media (max-width: 1200px) {
+  .country-card {
+    flex: 1 0 45%; /* Two cards per row for medium screens */
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .country-card {
+    flex: 1 0 90%; /* One card per row for small screens */
+    max-width: 90%;
+  }
+}
